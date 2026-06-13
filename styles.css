@@ -1,0 +1,281 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #e5e7eb;
+
+    background:
+        radial-gradient(circle at 10% 10%, #ff6b6b, transparent 20%),
+        radial-gradient(circle at 90% 15%, #feca57, transparent 20%),
+        radial-gradient(circle at 20% 50%, #48dbfb, transparent 25%),
+        radial-gradient(circle at 80% 60%, #5f27cd, transparent 25%),
+        radial-gradient(circle at 70% 80%, #ff6b6b, transparent 20%),
+        radial-gradient(circle at 15% 90%, #5f27cd, transparent 20%),
+        #0f172a;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: rgba(15, 23, 42, 0.75) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+    color: #e5e7eb !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #fbbf24 !important;
+}
+
+/* =========================
+   SECCIONES GENERALES
+========================= */
+
+section {
+    padding: 40px 0;
+}
+
+#introduccion,
+#experiencia,
+#galeria,
+#glosario {
+    padding-bottom: 0;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    background-image: url('img/banner.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.hero-content {
+    max-width: 550px;
+    color: white;
+    text-align: left;
+    transform: translateX(60px);
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.hero-content h3 {
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
+
+.hero-content h1,
+.hero-content h3 {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   INTRODUCCIÓN
+========================= */
+
+.intro-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.intro-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.intro-card h4 {
+    color: #fbbf24;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.intro-card ul {
+    padding-left: 20px;
+}
+
+.intro-card li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.card {
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card h5 {
+    color: #ffd166;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+/* =========================
+   GLOSARIO
+========================= */
+
+.glosario-section {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(255, 255, 255, 0.03),
+        transparent
+    );
+}
+
+.glosario-section .btn {
+    margin-bottom: 60px;
+}
+
+/* líneas decorativas */
+.glosario-section::before,
+.glosario-section::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.25),
+        transparent
+    );
+}
+
+.glosario-section::before {
+    top: 0;
+}
+
+.glosario-section::after {
+    bottom: 0;
+}
+
+.glosario-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.glosario-tag {
+    color: #fbbf24;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.glosario-content h2 {
+    font-size: 4rem;
+    font-weight: 700;
+
+    background: linear-gradient(
+        90deg,
+        #ff6b6b,
+        #feca57,
+        #48dbfb,
+        #5f27cd
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glosario-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-warning {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   GALERÍA
+========================= */
+
+.carousel img,
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
